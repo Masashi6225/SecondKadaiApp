@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,9 +59,13 @@
                             <constraint firstItem="TuT-oT-3p9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Udv-b9-ur8"/>
                             <constraint firstItem="qRD-Xe-uEY" firstAttribute="top" secondItem="TuT-oT-3p9" secondAttribute="bottom" constant="97" id="UzH-yZ-G4s"/>
                             <constraint firstItem="ozb-JE-G7v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aRi-ud-atm"/>
+                            <constraint firstItem="ozb-JE-G7v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="gZY-N3-dhG"/>
                             <constraint firstItem="qRD-Xe-uEY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gti-bt-6u6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="TuT-oT-3p9" id="Tdh-1y-OpB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,6 +105,9 @@
                             <constraint firstItem="q8R-p6-lWx" firstAttribute="top" secondItem="rO4-JB-IEb" secondAttribute="bottom" constant="220" id="uiC-6l-dc2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Dn6-9d-ei4" id="0mf-va-3FP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vS1-1C-DtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EhC-UR-0e4" userLabel="Exit" sceneMemberID="exit"/>
